@@ -3,11 +3,11 @@
 We have deployed this smart contract on the Avalanche Testnet L1 Layer.
 
 WALLET CONNECTION :
-Network RPC URL | http://127.0.0.1:9650/ext/bc/crowd/rpc 
-Network Name    | crowd
-Chain ID        | 7995621613
-Token Symbol    | CC
-Token Name      | CC Token
+[Network RPC URL | http://127.0.0.1:9650/ext/bc/crowd/rpc ]
+[Network Name    | crowd]
+[Chain ID        | 7995621613]
+[Token Symbol    | CC]
+[Token Name      | CC Token]
 
 
 
