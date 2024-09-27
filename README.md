@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+<h1>DAO based Fundraising Platform</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+We have deployed this smart contract on the Avalanche Testnet L1 Layer.
++----------------------------------------------------------+
+|                     WALLET CONNECTION                    |
++-----------------+----------------------------------------+
+| Network RPC URL | http://127.0.0.1:9650/ext/bc/crowd/rpc |
++-----------------+----------------------------------------+
+| Network Name    | crowd                                  |
++-----------------+----------------------------------------+
+| Chain ID        | 7995621613                             |
++-----------------+----------------------------------------+
+| Token Symbol    | CC                                     |
++-----------------+----------------------------------------+
+| Token Name      | CC Token                               |
++-----------------+----------------------------------------+
 
-## Available Scripts
+ 
 
-In the project directory, you can run:
+### Project Overview: Fundraising DAO
 
-### `npm start`
+A **Fundraising DAO** is a smart contract-based platform where people can create fundraising campaigns, contribute funds, and make decisions on how to allocate those funds through proposals and voting. It operates on the blockchain, ensuring transparency, security, and decentralization.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Campaign Creation**:
+   - Users can create fundraising campaigns by specifying a funding goal and a deadline. Each campaign has a unique ID, allowing easy tracking.
 
-### `npm test`
+2. **Contributions**:
+   - Contributors can send funds to campaigns. Each contribution is recorded on the blockchain, ensuring transparency and traceability.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Proposal Creation**:
+   - Once a campaign is created, proposals can be made to allocate the raised funds. These proposals detail how the funds should be used.
 
-### `npm run build`
+4. **Voting on Proposals**:
+   - All contributors can vote on proposals. Voting is based on support or opposition, and each vote influences whether the proposal is executed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. **Executing Proposals**:
+   - If a proposal receives enough support from the community, it can be executed, meaning the funds are distributed as proposed.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. **Refunds**:
+   - If a campaign does not reach its funding goal by the deadline, contributors can request refunds, ensuring their funds are protected.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+7. **Ownership and Administration**:
+   - The contract has an ownership model, where the owner can transfer ownership or renounce it. This helps in managing the contract securely.
 
-### `npm run eject`
+8. **Events for Transparency**:
+   - The system emits events (like `CampaignCreated`, `FundContributed`, `ProposalCreated`, etc.) that are logged on the blockchain, allowing anyone to track activities and changes within the DAO.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+9. **Governance Token**:
+   - The DAO may utilize a governance token to facilitate decision-making and provide voting rights to contributors, enhancing decentralization.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+10. **Data Structure for Campaigns and Proposals**:
+    - The contract maintains structured data for campaigns and proposals, allowing easy retrieval and management of information.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Simplified Explanation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Imagine you and your friends want to start a community project but need money to do it. Here’s how your Fundraising DAO works:
 
-## Learn More
+1. **Start a Fundraising Campaign**: You create a campaign to raise money for your project, setting a goal (like $1,000) and a deadline (like 30 days from now).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Gather Contributions**: Friends can contribute money to your campaign, which is all tracked so everyone knows how much is raised.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Make Proposals**: If you think part of the money should be used for a specific purchase (like materials for the project), you create a proposal outlining what you want to do with the funds.
 
-### Code Splitting
+4. **Vote on Proposals**: Everyone who contributed can vote on whether they agree with your proposal. If enough people support it, the money can be released for that purchase.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. **Transparency and Trust**: Since everything is recorded on the blockchain, everyone can see the contributions, proposals, and votes, ensuring trust and transparency.
 
-### Analyzing the Bundle Size
+6. **Get Your Money Back**: If the campaign doesn’t meet its goal, contributors can get their money back, so they are never at a loss.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Conclusion
 
-### Making a Progressive Web App
+In essence, your Fundraising DAO allows people to come together to fund projects they care about while ensuring a fair and transparent process for managing contributions and making decisions. It combines crowdfunding with the principles of decentralization, giving power back to the community.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
